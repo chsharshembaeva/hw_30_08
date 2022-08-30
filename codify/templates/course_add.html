@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+<!--    <input type="text" name="'name"/>-->
+<!--    <input type="text" name="'mentor_name"/>-->
+<!--    <input type="text" name="'language"/>-->
+    <input type="submit" value="SAVE"/>
+</form>
+
+{% endblock content %}
+
